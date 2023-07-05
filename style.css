@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-image: url("header.JPG");
+    background-size: cover;
+    background-color: #ffe6ea;
+    color: #333333;
+    padding: 20px;
+    text-align: center;
+
+}
+header h1 {
+    text-shadow: #ffcccf;
+}
+
+nav {
+    background-color: #ffcccf;
+    color: #333333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    border: 10px solid deeppink;
+    color: #ffffff;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-image: url("bg2.JPG");
+    background-color: #ffe6ea;
+    color: #555555;
+    overflow: hidden;
+}
+#main{
+    background-size: cover;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+section img {
+    float: left;
+    margin-right: 20px;
+}
+
+section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+footer {
+    background-image: url("bgg.JPG");
+    background-size: cover;
+    height: 50px;
+    background-color: #ffcccf;
+    color: #333333;
+    padding: 10px;
+    text-align: center;
+}
+
+ .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+ .grid-item {
+    width: 100%;
+}
+
+ .grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+/* Contact page specific styles */
+
+form {
+    margin-top: 20px;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #a7d4ff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #a7d4ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Slideshow specific styles */
+
+.slideshow {
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(173, 216, 230, 0.5);
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: #555555;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slide-arrow:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.slide-arrow.previous {
+    left: 20px;
+}
+
+.slide-arrow.next {
+    right: 20px;
+}
+
+/* More Ideas page specific styles */
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #a7d4ff;
+    margin: 10px;
+    border: 10px solid #a7d4ff;
+
+}
